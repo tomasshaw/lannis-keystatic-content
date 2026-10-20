@@ -13,7 +13,7 @@ image: /api/keystatic-images/posts/ingresos-brutos-simplificado-por-provincia/im
 updatedAt: 2026-10-20
 ctaTarget: monotributistas
 ---
-Las cuatro jurisdicciones tienen un régimen simplificado de Ingresos Brutos, con una cuota fija por mes según tu categoría. En CABA, Buenos Aires y Córdoba esa cuota se paga junto con el monotributo, en un solo pago a ARCA. En Santa Fe se paga aparte, a API.
+Las cuatro jurisdicciones tienen un régimen simplificado de Ingresos Brutos, con una cuota fija por mes según tu categoría. En CABA, Buenos Aires y Córdoba esa cuota se paga junto con el monotributo, en un solo pago a ARCA. En Santa Fe se paga aparte, a API, y en la ciudad de Santa Fe se suma el DReI municipal, que también tiene un régimen simplificado.
 
 Estas son las cuotas vigentes del segundo semestre de 2026:
 
@@ -42,6 +42,11 @@ Estas son las cuotas vigentes del segundo semestre de 2026:
 - Aparte, a API
 - $12.269 (categoría 1)
 - $237.197 (categoría 8)
+---
+- Ciudad de Santa Fe (DReI municipal)
+- Aparte, a la Municipalidad
+- 10 MT (I, comercio y servicios)
+- 39 MT (gastronomía)
 {% /table %}
 
 Si todavía no sabés si te corresponde Ingresos Brutos, empezá por [Ingresos Brutos para monotributistas](https://lannis.app/blog/ingresos-brutos-monotributistas).
@@ -264,6 +269,78 @@ En vez de letras, hay ocho categorías por tramo de facturación anual. Tramos d
 
 La categoría se revisa dos veces por año, en enero y en julio, con lo que facturaste en los últimos 12 meses.
 
+## Ciudad de Santa Fe (DReI)
+
+Si tu actividad está en la ciudad de Santa Fe, además de Ingresos Brutos a API pagás el Derecho de Registro e Inspección (DReI) a la Municipalidad. Se calcula sobre los ingresos brutos que devengás cada mes en la ciudad, con una alícuota según la actividad y un monto mínimo que se paga aunque no factures. La Ordenanza Tributaria 13.095, en su artículo 17, ofrece un régimen simplificado opcional con una cuota fija por categoría, el DReI simplificado.
+
+### Quién puede entrar al DReI simplificado
+
+Pueden entrar las personas humanas y las sociedades de la Sección IV de la Ley General de Sociedades con hasta tres socios que cumplan todas estas condiciones:
+
+- Hacen solo actividades de los incisos 2, 3 y 4 del artículo 12: industria y construcción, comercio y servicios en general, radio y televisión, salones de baile y gastronomía.
+- Tienen un solo establecimiento en la ciudad.
+- Están fuera del convenio multilateral.
+- No importan bienes ni servicios.
+- No tienen actividades con montos mínimos especiales (artículo 14).
+- Sus ingresos brutos en la ciudad de los últimos 12 meses, gravados, no gravados y exentos, no superan $62.438.740.
+- Usan hasta 200 m² para la actividad.
+
+Si sos monotributista en ARCA y estás en el régimen simplificado de API, podés entrar al DReI simplificado aunque no cumplas alguna de estas condiciones (artículo 17, inciso h).
+
+### Categorías y cuotas del DReI simplificado
+
+La categoría depende de tus ingresos brutos anuales. La cuota mensual está en Módulos Tributarios (MT) y cambia según la actividad. Valores de la Ordenanza 13.095, vigente desde el 1 de enero de 2026:
+
+{% table %}
+- Categoría
+- Ingresos brutos anuales hasta
+- Industria y construcción (inciso 2)
+- Comercio y servicios (incisos 3, 4a y 4b)
+- Gastronomía (inciso 4c)
+---
+- I
+- $24.975.496
+- 11 MT
+- 10 MT
+- 39 MT
+---
+- II
+- $31.219.364
+- 12 MT
+- 16 MT
+- 39 MT
+---
+- III
+- $40.585.180
+- 16 MT
+- 21 MT
+- 39 MT
+---
+- IV
+- $49.950.993
+- 19 MT
+- 27 MT
+- 39 MT
+---
+- V
+- $62.438.740
+- 23 MT
+- 31 MT
+- 39 MT
+{% /table %}
+
+Desde el 1 de julio de 2026, 1 MT vale $1.000 (Decreto 00053/2026). La Municipalidad puede actualizar ese valor cada seis meses, según el índice de precios al consumidor del IPEC. Si hacés actividades de distintos incisos a la vez, pagás la cuota más alta.
+
+Si pagás el año completo por adelantado, tenés un descuento equivalente a dos cuotas. La categoría se revisa una vez por año, con una declaración jurada que vence el último día hábil de enero, y la nueva categoría rige desde ese mes. Si te corresponde la misma categoría, no hace falta presentarla. La Municipalidad también puede recategorizarte de oficio.
+
+### Si no estás en el DReI simplificado
+
+Quedás en el régimen general, con declaración jurada mensual. En comercio y servicios en general, la alícuota es del 6 por mil sobre lo que devengás en el mes, con un mínimo de 12 MT aunque no tengas ingresos.
+
+### Plan de pagos de la Municipalidad
+
+Desde el 1 de septiembre de 2026, la falta de pago de los tributos municipales suma un interés resarcitorio del 3% por mes, que no se calcula por día (Decreto 00068/2026). El mismo decreto establece un plan de pagos permanente y sin quita, con un interés de financiación del 3,5% mensual. Llega a 36 cuotas en gestión administrativa (6 para el Derecho de Edificación) o a 12 en gestión judicial. La cuota mínima del DReI es de 30 MT, y para pedir el plan necesitás al menos tres períodos impagos, consecutivos o alternados. Si la deuda llega a 200 MT o está en gestión judicial, desde la segunda cuota pagás con débito automático o débito directo.
+
 ## Qué pasa si no estás en el simplificado
 
 Te queda el régimen general de tu jurisdicción, con alícuota sobre lo facturado y declaración jurada. Si trabajás en más de una provincia, corresponde convenio multilateral, que en Buenos Aires y Santa Fe te deja afuera del simplificado. Lo explicamos en [qué es el CM-05 y por qué te afecta](https://lannis.app/blog/que-es-el-cm-05-y-por-que-te-afecta).
@@ -290,16 +367,20 @@ No. El régimen simplificado de API se paga aparte, todos los meses, con su prop
 
 No. La adhesión es voluntaria y se pide en ARBA. Si no adherís, seguís en el régimen general.
 
+### ¿El DReI de Santa Fe se paga con el monotributo?
+
+No. Se paga aparte, a la Municipalidad de Santa Fe.
+
 ### ¿Qué pasa si tengo clientes en otra provincia?
 
 Si desarrollás tu actividad en más de una jurisdicción, corresponde convenio multilateral. En Buenos Aires y en Santa Fe eso te deja afuera del simplificado.
 
 ### ¿Cada cuánto cambian estos montos?
 
-Dos veces por año, en febrero y en agosto, cuando se actualizan las categorías del monotributo. En Santa Fe la tabla se actualiza por semestre.
+Dos veces por año, en febrero y en agosto, cuando se actualizan las categorías del monotributo. En Santa Fe la tabla se actualiza por semestre. El DReI simplificado de la ciudad de Santa Fe está en MT, y la Municipalidad puede actualizar el valor del MT cada seis meses.
 
 ---
 
-Fuentes: [Monotributo unificado, ARCA](https://www.afip.gob.ar/monotributo/ayuda/monotributo-unificado.asp) · [Resolución AGIP 285/2026, Boletín Oficial CABA](https://boletinoficial.buenosaires.gob.ar/normativaba/norma/867651) · [Anexo I de la Resolución AGIP 285/2026](https://documentosboletinoficial.buenosaires.gob.ar/publico/PE-RES-MHFGC-AGIP-285-26-ANX.pdf) · [Régimen Simplificado, AGIP](https://www.agip.gob.ar/impuestos/ingresos-brutos) · [Ingresos Brutos Simplificado, ARBA](https://www.arba.gov.ar/IBSimplificado/IBS/) · [Normativa del régimen, ARBA](https://web.arba.gov.ar/normativas-ibs) · [Régimen simplificado voluntario, Provincia de Buenos Aires](https://gba.gob.ar/comunicacion_publica/gacetillas/la_provincia_present%C3%B3_el_nuevo_r%C3%A9gimen_simplificado_de_ingresos) · [Resolución Normativa 36/2026, Rentas Córdoba](https://www.rentascordoba.gob.ar/cms/wp-content/uploads/2026/07/resolucion_normativa_n_362026_%E2%80%93_regimen_simplificado_-_nuevos_valores.pdf) · [Monotributo Unificado Córdoba, Rentas Córdoba](https://www.rentascordoba.gob.ar/monotributo-unificado/) · [Régimen Simplificado, API Santa Fe](https://www.santafe.gob.ar/index.php/web/content/view/full/211373/(subtema)/102284)
+Fuentes: [Monotributo unificado, ARCA](https://www.afip.gob.ar/monotributo/ayuda/monotributo-unificado.asp) · [Resolución AGIP 285/2026, Boletín Oficial CABA](https://boletinoficial.buenosaires.gob.ar/normativaba/norma/867651) · [Anexo I de la Resolución AGIP 285/2026](https://documentosboletinoficial.buenosaires.gob.ar/publico/PE-RES-MHFGC-AGIP-285-26-ANX.pdf) · [Régimen Simplificado, AGIP](https://www.agip.gob.ar/impuestos/ingresos-brutos) · [Ingresos Brutos Simplificado, ARBA](https://www.arba.gov.ar/IBSimplificado/IBS/) · [Normativa del régimen, ARBA](https://web.arba.gov.ar/normativas-ibs) · [Régimen simplificado voluntario, Provincia de Buenos Aires](https://gba.gob.ar/comunicacion_publica/gacetillas/la_provincia_present%C3%B3_el_nuevo_r%C3%A9gimen_simplificado_de_ingresos) · [Resolución Normativa 36/2026, Rentas Córdoba](https://www.rentascordoba.gob.ar/cms/wp-content/uploads/2026/07/resolucion_normativa_n_362026_%E2%80%93_regimen_simplificado_-_nuevos_valores.pdf) · [Monotributo Unificado Córdoba, Rentas Córdoba](https://www.rentascordoba.gob.ar/monotributo-unificado/) · [Régimen Simplificado, API Santa Fe](https://www.santafe.gob.ar/index.php/web/content/view/full/211373/(subtema)/102284) · [Ordenanza Tributaria 13.095, Municipalidad de Santa Fe](https://santafeciudad.gov.ar/wp-content/uploads/2026/01/ordenanza-13095.pdf) · [Decreto 00053/2026, Municipalidad de Santa Fe](https://transparencia.santafeciudad.gov.ar/wp-content/uploads/2026/06/00053-2026-BEM-y-DIDI.pdf) · [Decreto 00068/2026, Boletín Electrónico Municipal n° 567](https://sidom.santafeciudad.gov.ar/wssidom/api/pieza?pid=CRCvVn5LKK7my2nWPW9NTA==) · [Calendario de vencimientos 2026, Municipalidad de Santa Fe](https://santafeciudad.gov.ar/wp-content/uploads/2025/12/Calendario-de-Vencimientos-2026-1.pdf)
 
 Actualizado en octubre de 2026.
