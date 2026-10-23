@@ -1,0 +1,108 @@
+---
+title: 'Facturar con Gemini: facturas de ARCA desde una app conectada'
+author: Equipo de Lannis
+description: >-
+  Gemini por sí solo no emite facturas válidas. Con Lannis como app conectada,
+  emite facturas de ARCA con CAE, también desde la app del celular.
+date: 2026-10-23
+categories:
+  - producto
+  - facturacion
+  - monotributo
+  - responsable-inscripto
+section: novedades-lannis
+image: /api/keystatic-images/posts/facturar-con-gemini/image.png
+---
+Gemini, por sí solo, no puede emitir una factura que valga ante ARCA. Le falta lo que hace válida a una factura electrónica, que ARCA la autorice y le asigne un CAE. Si agregás Lannis como app conectada, Gemini emite facturas reales con su CAE a partir de lo que le escribís en el chat.
+
+## Qué es una app conectada en Gemini
+
+Gemini es el asistente de inteligencia artificial de Google. Una app conectada le da acceso a un servicio externo. Con ese acceso, Gemini consulta tus datos ahí o hace una tarea por vos sin salir de la conversación.
+
+Para usarla en un chat, escribís @ y el nombre de la app, y después tu pedido. Así Gemini sabe que tiene que resolverlo con las herramientas de Lannis y no con lo que sabe en general.
+
+Sin Lannis, Gemini puede explicarte qué es el monotributo, pero no ve tus facturas, tu categoría ni tu deuda. Si le pedís un cálculo sobre tu caso, puede equivocarse con una regla o con un monto. Con Lannis conectado, responde con tus propios datos, los que Lannis sincroniza de ARCA.
+
+## Qué puede hacer Gemini con Lannis
+
+Gemini le pasa el pedido a Lannis, y Lannis es el que trabaja con ARCA. Para eso, Lannis [te conecta con ARCA para que le delegues los servicios que corresponden](https://lannis.app/blog/delegar-servicios-arca).
+
+Una vez conectado, Gemini puede:
+
+- Emitir facturas y notas de crédito, y buscar en el padrón de ARCA los datos de una empresa a partir de su CUIT.
+- Listar lo que emitiste y conseguirte el PDF de cualquier factura.
+- Crear facturas recurrentes y después editarlas, pausarlas, retomarlas o cancelarlas.
+- Contarte tu deuda con ARCA, separada en vencido y a vencer, y generar el VEP para pagarla.
+- Mostrarte tu categoría del monotributo, el límite anual, lo facturado en el semestre y tus próximos vencimientos.
+
+Si sos responsable inscripto, también arma el [Libro IVA Digital](https://lannis.app/blog/libro-iva-con-ia) de un mes y te muestra las retenciones y percepciones que sufriste. Desde Gemini usás las mismas funciones que te da tu plan de Lannis.
+
+## La vista previa antes de emitir
+
+Una factura que ARCA autorizó ya no se puede cambiar. Si algo salió mal, la corrección es una [nota de crédito](https://lannis.app/blog/nota-de-credito). Por eso Lannis primero te muestra la factura armada, con el cliente, el monto, el concepto y la letra, y la emite recién cuando confirmás. Si un dato no cierra, se lo corregís a Gemini en el chat.
+
+Lannis tiene además sus propios frenos. Si ese mismo día ya emitiste una factura con el mismo cliente, el mismo monto y el mismo tipo, Lannis no emite la segunda. Gemini te muestra la que ya existe. Las notas de crédito y el VEP también pasan por la vista previa. El VEP es una orden de pago real ante ARCA.
+
+## Qué cuenta de Google necesitás
+
+Las apps conectadas personalizadas necesitan una cuenta personal de Google. Con una cuenta del trabajo o de una institución educativa no vas a poder agregar Lannis.
+
+La app se agrega desde la web de Gemini, en la computadora. Después de eso, Lannis también queda disponible en la app de Gemini del celular, con la misma cuenta.
+
+## Cómo conectar Lannis a Gemini
+
+La URL del conector es `https://mcp.lannis.app/mcp`. También la tenés en Lannis, en Integraciones.
+
+1. Entrá a gemini.google.com desde la web.
+2. Abrí Configuración y entrá en Apps conectadas.
+3. En Apps personalizadas, tocá Agregar una app personalizada.
+4. Pegá la URL de Lannis y tocá Siguiente.
+5. Iniciá sesión con tu cuenta de Lannis para autorizarlo.
+
+Google está renombrando estos menús y en tu cuenta los nombres pueden ser otros. Si no encontrás una opción, buscá la que agrega una app personalizada.
+
+## Ejemplos de pedidos
+
+Le escribís como le hablarías a alguien:
+
+- "Haceme una factura de 180.000 pesos al estudio de arquitectura con este CUIT por las fotos de la obra". Gemini trae del padrón el nombre y la condición frente al IVA, y Lannis pone la letra que corresponde.
+- "Anulá la factura que le hice ayer a la panadería". Gemini busca la factura, te muestra la nota de crédito por el total y la emite cuando confirmás.
+- "¿Cuál fue la factura más grande que hice este año?". Gemini recorre las facturas emitidas y te dice cuál es, con su fecha.
+- "¿En qué categoría estoy y cuánto pagaría por mes en la siguiente?". Gemini cruza tu categoría con la tabla vigente del monotributo. Hay más en [vencimientos y categoría con IA](https://lannis.app/blog/vencimientos-y-categoria-con-ia).
+- "¿Tengo alguna declaración jurada vencida?". Gemini te lista las obligaciones pendientes y las que ya vencieron.
+- "Cancelá la factura recurrente de la clienta que se mudó". Gemini te muestra cuál va a cancelar antes de hacerlo. Una recurrencia cancelada no se reactiva, y si la necesitás de nuevo se crea otra.
+- "¿Qué percepciones de IVA me hicieron en septiembre?". Si sos responsable inscripto, Gemini te las lista por período.
+
+Las facturas que emite Gemini quedan en tu historial de Lannis, con las que hiciste en la app o [por WhatsApp](https://lannis.app/blog/facturar-por-whatsapp). Si usás otro asistente, el conector es el mismo, y tenés la guía de [ChatGPT](https://lannis.app/blog/facturar-con-chatgpt), [Claude](https://lannis.app/blog/facturar-con-claude) y [Grok](https://lannis.app/blog/facturar-con-grok). El panorama general está en [facturar con IA](https://lannis.app/blog/facturar-con-ia).
+
+[Empezá gratis](https://lannis.app/comencemos).
+
+## Preguntas frecuentes
+
+### ¿Puedo conectar Lannis con la cuenta de Google del trabajo?
+
+No. Las apps personalizadas de Gemini piden una cuenta personal de Google.
+
+### ¿Puedo facturar desde la app de Gemini en el celular?
+
+Sí, una vez que agregaste Lannis desde la web. El paso de agregarla se hace en la computadora.
+
+### Gemini me contestó sin usar Lannis. ¿Qué hago?
+
+Empezá el mensaje con @ y el nombre de la app. Así Gemini usa las herramientas de Lannis en lugar de responder con información general.
+
+### ¿Dónde encuentro la URL para agregar Lannis?
+
+En Lannis, en Integraciones. Es `https://mcp.lannis.app/mcp`.
+
+### Soy responsable inscripto. ¿Gemini emite factura A o B?
+
+La que corresponda. Lannis la define según tu condición y la del cliente en el padrón de ARCA, y no se la tenés que indicar.
+
+### ¿Una factura emitida desde Gemini vale lo mismo que una hecha en la app?
+
+Sí. Las dos las emite Lannis ante ARCA y tienen su CAE.
+
+---
+
+Actualizado en octubre de 2026.

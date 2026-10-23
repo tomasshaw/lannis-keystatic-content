@@ -1,0 +1,111 @@
+---
+title: 'Facturar con Grok: facturas de ARCA con CAE desde el chat'
+author: Equipo de Lannis
+description: >-
+  Grok solo no puede emitir una factura válida. Conectado a Lannis, emite
+  facturas reales de ARCA con su CAE y te muestra cada una antes de emitirla.
+date: 2026-10-23
+categories:
+  - producto
+  - facturacion
+  - monotributo
+  - responsable-inscripto
+section: novedades-lannis
+image: /api/keystatic-images/posts/facturar-con-grok/image.png
+---
+Grok solo no puede emitir una factura válida. Una factura electrónica existe cuando ARCA la autoriza y le asigna un CAE, y Grok no tiene acceso a ARCA. Conectado a Lannis, Grok emite facturas reales: le pedís una factura en el chat y Lannis la autoriza en ARCA con su CAE.
+
+## Qué es un conector en Grok
+
+Grok es el asistente de inteligencia artificial de xAI. Un conector le suma a Grok las herramientas de otro servicio. Con ellas, Grok puede leer tus datos en ese servicio o hacer una tarea en tu nombre sin salir de la conversación.
+
+Sin el conector de Lannis, Grok responde con lo que sabe en general. Te puede contar cómo funciona la recategorización o qué datos lleva una factura E, pero no conoce tu categoría, tus facturas ni tu deuda. Si le pedís una cuenta sobre tu situación, puede errar una regla o un monto.
+
+## Qué hace Grok con Lannis conectado
+
+Grok le pasa tus pedidos a Lannis, y Lannis hace el trámite ante ARCA. Para eso, Lannis [te conecta con ARCA para que le delegues los servicios que corresponden](https://lannis.app/blog/delegar-servicios-arca).
+
+Una vez conectado, Grok puede:
+
+- Emitir facturas, también de exportación, y notas de crédito.
+- Traer del padrón de ARCA los datos de una empresa a partir de su CUIT.
+- Listar las facturas que emitiste y darte el PDF de cualquiera.
+- Programar facturas recurrentes y después cambiarles el monto, pausarlas, retomarlas o cancelarlas.
+- Decirte cuánto debés con ARCA, separado en vencido y a vencer, y generar el VEP para pagarlo.
+- Mostrarte tu categoría del monotributo, el límite anual y lo que llevás facturado en el semestre.
+- Listar tus próximos vencimientos y las declaraciones juradas pendientes.
+
+Si sos responsable inscripto, además arma el [Libro IVA Digital](https://lannis.app/blog/libro-iva-con-ia) del mes y lista las retenciones y percepciones que te hicieron. Grok solo usa las funciones que incluye tu plan de Lannis.
+
+La deuda y el estado fiscal salen de los datos que Lannis sincroniza de ARCA. La factura, en cambio, va a ARCA en el momento de emitirla.
+
+## La confirmación antes de cada factura
+
+Una factura autorizada queda registrada en ARCA y ya no se edita ni se borra. Si tiene un error, se anula con una [nota de crédito](https://lannis.app/blog/nota-de-credito). Grok no emite apenas le escribís. Primero te muestra la factura armada, con cliente, monto, concepto y letra, y espera tu confirmación. Si un dato está mal, se lo decís en el chat y Grok la rehace antes de mandarla.
+
+Lannis suma un control propio. Si hoy ya emitiste una factura al mismo cliente, por el mismo monto y del mismo tipo, Lannis frena la segunda y Grok te muestra la que existe. Si se trata de otra venta, se lo aclarás y la emite.
+
+Las notas de crédito y los VEP tienen dos pasos. Grok te muestra una vista previa y no se genera nada hasta que confirmás. Esto pesa más con el VEP, que es una orden de pago real ante ARCA.
+
+## Qué plan de Grok necesitás
+
+Según la documentación de xAI, los conectores están disponibles para todos los usuarios de Grok. En las cuentas Business y Enterprise, un administrador los tiene que habilitar primero.
+
+## Cómo conectar Lannis a Grok
+
+La conexión se configura una sola vez, desde grok.com en la computadora. La app del celular no sirve para este paso. Tené a mano la URL del conector, `https://mcp.lannis.app/mcp`, que también figura en Lannis, en Integraciones.
+
+1. Entrá a grok.com desde la web.
+2. Abrí Conectores.
+3. Tocá Nuevo conector y elegí Personalizado.
+4. Pegá la URL de Lannis.
+5. Iniciá sesión en Lannis para autorizar el conector.
+
+xAI documenta poco esta parte y puede cambiar el nombre de los menús. Si no encontrás alguna de estas opciones, buscá la que permite agregar un conector personalizado.
+
+## Pedidos que podés hacerle
+
+Le escribís con tus palabras, y Grok completa lo que falta preguntándote:
+
+- "Facturale 1.500 dólares a mi cliente de Estados Unidos por el desarrollo de septiembre". Es una factura E. Grok te pide el nombre y la dirección del cliente, que la factura de exportación necesita, y te la muestra antes de emitirla.
+- "Haceme una factura de 400.000 pesos más IVA a la empresa de este CUIT por la instalación", con el CUIT pegado. Si sos responsable inscripto, Lannis decide si va A o B según la condición del cliente en el padrón.
+- "¿Qué facturas emití este mes?". Grok te lista las facturas y las notas de crédito, y te da el total ya neto de las notas.
+- "Generá el VEP para pagar lo vencido del monotributo". Grok te muestra el monto y lo genera cuando confirmás. El VEP es la orden de pago, y después lo pagás vos. Lo contamos en detalle en [deuda con ARCA e IA](https://lannis.app/blog/deuda-arca-con-ia).
+- "Programá una factura de 45.000 pesos todos los lunes para mi alumna de inglés". Grok te muestra el monto y la primera fecha, y crea la [factura recurrente](https://lannis.app/blog/facturas-recurrentes). Antes de cada fecha, Lannis te pide por WhatsApp que confirmes esa factura.
+- "Subí a 140.000 pesos el abono de soporte que facturo cada mes". Grok te muestra el monto actual y el nuevo antes de cambiar la recurrencia.
+
+Para saber cuánto margen te queda en tu categoría o qué te vence este mes, mirá [vencimientos y categoría con IA](https://lannis.app/blog/vencimientos-y-categoria-con-ia).
+
+Si usás otro asistente, el conector es el mismo. Tenés la guía para [ChatGPT](https://lannis.app/blog/facturar-con-chatgpt), [Claude](https://lannis.app/blog/facturar-con-claude) y [Gemini](https://lannis.app/blog/facturar-con-gemini), y el panorama completo en [facturar con IA](https://lannis.app/blog/facturar-con-ia).
+
+[Empezá gratis](https://lannis.app/comencemos).
+
+## Preguntas frecuentes
+
+### ¿Puedo configurar el conector desde la app de Grok?
+
+No. Se configura desde grok.com en la computadora.
+
+### ¿Sirve para facturar al exterior?
+
+Sí. Grok emite la factura E a través de Lannis, también en dólares, y te pide los datos del cliente que la exportación exige.
+
+### ¿Grok paga mi deuda con ARCA?
+
+No. Grok genera el VEP, que es la orden de pago, y vos lo pagás. Antes de generarlo te muestra el monto y espera que confirmes.
+
+### ¿Dónde quedan las facturas que emite Grok?
+
+En tu historial de Lannis, junto con las que hacés desde la app o [por WhatsApp](https://lannis.app/blog/facturar-por-whatsapp). Desde el chat le podés pedir el PDF de cualquiera.
+
+### Uso Grok con la cuenta de mi empresa. ¿Puedo conectar Lannis?
+
+Sí, si un administrador habilitó los conectores en la cuenta Business o Enterprise.
+
+### ¿Grok puede usar todas las funciones de Lannis?
+
+Solo las que incluye tu plan de Lannis. Lo que tu plan no tiene tampoco está disponible desde el chat.
+
+---
+
+Actualizado en octubre de 2026.
