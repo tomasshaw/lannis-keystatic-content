@@ -21,7 +21,7 @@ Gemini es el asistente de inteligencia artificial de Google. Una app conectada l
 
 Para usarla en un chat, escribís @ y el nombre de la app, y después tu pedido. Así Gemini sabe que tiene que resolverlo con las herramientas de Lannis y no con lo que sabe en general.
 
-Sin Lannis, Gemini puede explicarte qué es el monotributo, pero no ve tus facturas, tu categoría ni tu deuda. En una cuenta sobre tu caso puede equivocarse con una regla o con un monto. Con Lannis conectado, responde con tus propios datos, los que Lannis sincroniza de ARCA.
+Sin Lannis, Gemini puede explicarte qué es el monotributo, pero no ve tus facturas, tu categoría ni tu deuda. Si le pedís un cálculo sobre tu caso, puede equivocarse con una regla o con un monto. Con Lannis conectado, responde con tus propios datos, los que Lannis sincroniza de ARCA.
 
 ## Qué puede hacer Gemini con Lannis
 
@@ -35,13 +35,13 @@ Una vez conectado, Gemini puede:
 - Contarte tu deuda con ARCA, separada en vencido y a vencer, y generar el VEP para pagarla.
 - Mostrarte tu categoría del monotributo, el límite anual, lo facturado en el semestre y tus próximos vencimientos.
 
-Si sos responsable inscripto, también arma el [Libro IVA Digital](https://lannis.app/blog/libro-iva-con-ia) de un mes y te muestra las retenciones y percepciones que sufriste. Desde Gemini usás las mismas funciones que te da tu plan de Lannis, ni más ni menos.
+Si sos responsable inscripto, también arma el [Libro IVA Digital](https://lannis.app/blog/libro-iva-con-ia) de un mes y te muestra las retenciones y percepciones que sufriste. Desde Gemini usás las mismas funciones que te da tu plan de Lannis.
 
 ## La vista previa antes de emitir
 
 Una factura que ARCA autorizó ya no se puede cambiar. Si algo salió mal, la corrección es una [nota de crédito](https://lannis.app/blog/nota-de-credito). Por eso Lannis primero te muestra la factura armada, con el cliente, el monto, el concepto y la letra, y la emite recién cuando confirmás. Si un dato no cierra, se lo corregís a Gemini en el chat.
 
-Lannis tiene además sus propios frenos. Si ese mismo día ya emitiste una factura con el mismo cliente, el mismo monto y el mismo tipo, Lannis no emite la segunda. Gemini te muestra la que ya existe. El VEP y las notas de crédito van en dos pasos: Gemini te muestra una vista previa y Lannis los genera recién cuando confirmás. En el caso del VEP pesa todavía más, porque es una orden de pago real ante ARCA.
+Lannis tiene además sus propios frenos. Si ese mismo día ya emitiste una factura con el mismo cliente, el mismo monto y el mismo tipo, Lannis no emite la segunda. Gemini te muestra la que ya existe. Las notas de crédito y el VEP también pasan por la vista previa. El VEP es una orden de pago real ante ARCA.
 
 ## Qué cuenta de Google necesitás
 
@@ -63,9 +63,9 @@ Google está renombrando estos menús y en tu cuenta los nombres pueden ser otro
 
 ## Ejemplos de pedidos
 
-Arrancás con @ y el nombre de la app, y seguís como le hablarías a alguien:
+Le escribís como le hablarías a alguien:
 
-- "Haceme una factura de 180.000 pesos al estudio de arquitectura con este CUIT por las fotos de la obra", con el CUIT del cliente. Gemini trae del padrón el nombre y la condición frente al IVA, y Lannis pone la letra que corresponde.
+- "Haceme una factura de 180.000 pesos al estudio de arquitectura con este CUIT por las fotos de la obra". Gemini trae del padrón el nombre y la condición frente al IVA, y Lannis pone la letra que corresponde.
 - "Anulá la factura que le hice ayer a la panadería". Gemini busca la factura, te muestra la nota de crédito por el total y la emite cuando confirmás.
 - "¿Cuál fue la factura más grande que hice este año?". Gemini recorre las facturas emitidas y te dice cuál es, con su fecha.
 - "¿En qué categoría estoy y cuánto pagaría por mes en la siguiente?". Gemini cruza tu categoría con la tabla vigente del monotributo. Hay más en [vencimientos y categoría con IA](https://lannis.app/blog/vencimientos-y-categoria-con-ia).
