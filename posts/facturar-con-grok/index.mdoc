@@ -13,7 +13,7 @@ categories:
 section: novedades-lannis
 image: /api/keystatic-images/posts/facturar-con-grok/image.png
 ---
-Grok solo no puede emitir una factura válida. Una factura electrónica existe cuando ARCA la autoriza y le asigna un CAE, y Grok no tiene acceso a ARCA. Conectado a Lannis, Grok emite facturas reales. Se la pedís en el chat y Lannis la autoriza en ARCA con su CAE.
+Grok solo no puede emitir una factura válida. Una factura electrónica existe cuando ARCA la autoriza y le asigna un CAE, y Grok no tiene acceso a ARCA. Conectado a Lannis, Grok emite facturas reales: le pedís una factura en el chat y Lannis la autoriza en ARCA con su CAE.
 
 ## Qué es un conector en Grok
 
@@ -23,7 +23,7 @@ Sin el conector de Lannis, Grok responde con lo que sabe en general. Te puede co
 
 ## Qué hace Grok con Lannis conectado
 
-El conector de Lannis es un servidor MCP remoto. Grok le pasa tus pedidos a Lannis, y Lannis hace el trámite ante ARCA. Para eso, Lannis [te conecta con ARCA para que le delegues los servicios que corresponden](https://lannis.app/blog/delegar-servicios-arca).
+Grok le pasa tus pedidos a Lannis, y Lannis hace el trámite ante ARCA. Para eso, Lannis [te conecta con ARCA para que le delegues los servicios que corresponden](https://lannis.app/blog/delegar-servicios-arca).
 
 Una vez conectado, Grok puede:
 
@@ -68,11 +68,11 @@ xAI documenta poco esta parte y puede cambiar el nombre de los menús. Si no enc
 Le escribís con tus palabras, y Grok completa lo que falta preguntándote:
 
 - "Facturale 1.500 dólares a mi cliente de Estados Unidos por el desarrollo de septiembre". Es una factura E. Grok te pide el nombre y la dirección del cliente, que la factura de exportación necesita, y te la muestra antes de emitirla.
-- "Haceme una factura de 400.000 pesos más IVA a la empresa de este CUIT por la instalación", con el CUIT pegado. Si sos responsable inscripto, Lannis decide si va A o B según la condición del cliente en el padrón. La letra no se la tenés que indicar.
+- "Haceme una factura de 400.000 pesos más IVA a la empresa de este CUIT por la instalación", con el CUIT pegado. Si sos responsable inscripto, Lannis decide si va A o B según la condición del cliente en el padrón.
 - "¿Qué facturas emití este mes?". Grok te lista las facturas y las notas de crédito, y te da el total ya neto de las notas.
-- "Generá el VEP para pagar lo vencido del monotributo". Grok te muestra el monto y lo genera cuando confirmás. El VEP todavía no es el pago, después lo tenés que pagar. Lo contamos en detalle en [deuda con ARCA e IA](https://lannis.app/blog/deuda-arca-con-ia).
-- "Programá una factura de 45.000 pesos todos los lunes para mi alumna de inglés". Grok te muestra el monto y la primera fecha, y crea la [factura recurrente](https://lannis.app/blog/facturas-recurrentes) cuando confirmás. Antes de cada fecha, Lannis te pide por WhatsApp que confirmes esa factura.
-- "Subí a 140.000 pesos el abono de soporte que facturo cada mes". Grok te muestra el monto actual y el nuevo, y cambia la recurrencia cuando confirmás.
+- "Generá el VEP para pagar lo vencido del monotributo". Grok te muestra el monto y lo genera cuando confirmás. El VEP es la orden de pago, y después lo pagás vos. Lo contamos en detalle en [deuda con ARCA e IA](https://lannis.app/blog/deuda-arca-con-ia).
+- "Programá una factura de 45.000 pesos todos los lunes para mi alumna de inglés". Grok te muestra el monto y la primera fecha, y crea la [factura recurrente](https://lannis.app/blog/facturas-recurrentes). Antes de cada fecha, Lannis te pide por WhatsApp que confirmes esa factura.
+- "Subí a 140.000 pesos el abono de soporte que facturo cada mes". Grok te muestra el monto actual y el nuevo antes de cambiar la recurrencia.
 
 Para saber cuánto margen te queda en tu categoría o qué te vence este mes, mirá [vencimientos y categoría con IA](https://lannis.app/blog/vencimientos-y-categoria-con-ia).
 
