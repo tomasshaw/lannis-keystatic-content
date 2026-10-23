@@ -1,0 +1,95 @@
+---
+title: 'Facturar con Claude: el conector de Lannis para ARCA'
+author: Equipo de Lannis
+description: >-
+  Claude conectado a Lannis emite facturas de ARCA con su CAE, en cualquier
+  plan de Claude, y te pide permiso antes de cada una.
+date: 2026-10-23
+categories:
+  - producto
+  - facturacion
+  - monotributo
+section: novedades-lannis
+image: /api/keystatic-images/posts/facturar-con-claude/image.png
+---
+Claude conectado a Lannis emite facturas electrónicas reales, autorizadas por ARCA y con su CAE. Le pedís la factura en el chat y Claude te pide permiso antes de emitirla.
+
+## Qué es un conector en Claude
+
+Un conector le da a Claude acceso a un servicio externo. Claude sigue siendo el mismo asistente, pero además de conversar puede usar las herramientas de ese servicio para consultar datos o hacer una tarea.
+
+Sin conector, Claude no ve tu situación en ARCA. Te puede explicar qué es una factura C o cómo funciona la recategorización, pero no sabe cuánto facturaste ni cuánto debés. En un cálculo se puede equivocar con una regla o con un monto. Conectado a Lannis, responde con tus propios datos, los que Lannis sincroniza de ARCA.
+
+## Qué hace Claude conectado a Lannis
+
+- Emite facturas y notas de crédito, y te pasa el PDF de una factura que ya emitiste.
+- Programa facturas recurrentes, y también las edita, pausa, retoma o cancela.
+- Te dice cuánto debés con ARCA, separado en vencido y a vencer, y genera el VEP para pagarlo.
+- Lista tus próximos vencimientos y las declaraciones juradas pendientes.
+
+Si sos responsable inscripto, además te arma el [Libro IVA Digital](https://lannis.app/blog/libro-iva-con-ia) del mes y te lista las retenciones y percepciones que sufriste. Claude accede a las funciones de tu plan de Lannis y a ninguna otra.
+
+## El permiso antes de emitir
+
+Una factura autorizada no se puede editar ni borrar. Si tiene un error, se corrige con una [nota de crédito](https://lannis.app/blog/nota-de-credito). Por eso Claude te pide permiso cada vez que va a usar una herramienta de Lannis que emite. El pedido muestra cliente, monto, concepto y letra, y si algo no está bien lo rechazás y se lo corregís a Claude antes de que llegue a ARCA. Conviene aprobar de a una, porque si elegís permitirlo siempre Claude deja de preguntarte.
+
+La letra no la elegís vos. Lannis la define según tu condición fiscal y la del cliente.
+
+Con los VEP pasa lo mismo. Un VEP es una orden de pago real ante ARCA, y Claude primero te muestra el monto y lo genera solo si confirmás.
+
+## Qué plan de Claude necesitás
+
+Cualquiera. El conector de Lannis funciona en todos los planes de Claude, incluido el gratis, que permite agregar un conector personalizado. Si en el plan gratis ya tenés otro conector personalizado, vas a tener que elegir cuál dejar.
+
+## Cómo conectar Lannis a Claude
+
+La conexión se hace una sola vez, desde la web de Claude en la computadora y no desde la app del celular. Antes de empezar, copiá la URL del conector, que está en Lannis, en Integraciones: https://mcp.lannis.app/mcp.
+
+1. Entrá a claude.ai desde la web.
+2. Abrí Ajustes y entrá en Conectores.
+3. Tocá Agregar conector personalizado.
+4. Pegá la URL de Lannis y confirmá.
+5. Iniciá sesión con tu cuenta de Lannis para autorizarlo.
+
+En un chat, el conector se activa desde el menú +. Si Claude no usa Lannis cuando le pedís una factura, revisá que esté activado ahí.
+
+## Qué le podés pedir
+
+Le pedís las cosas como se las pedirías a una persona:
+
+- "Facturale 240.000 pesos a la empresa de este CUIT por el desarrollo de la web", con el CUIT de tu cliente. Claude busca la empresa en el padrón, arma la factura con la letra que corresponde y te la muestra antes de emitirla.
+- "Ayer facturé 150.000 y eran 130.000, corregilo". Claude arma una nota de crédito por la diferencia sobre esa factura. Si la querés anular entera, la nota de crédito sale por el total.
+- "Programá una factura de 300.000 pesos el día 1 de cada mes para mi cliente de mantenimiento". Claude te muestra el monto y la primera fecha, y crea la recurrencia cuando confirmás. Después, cada mes, Lannis te pide por WhatsApp que confirmes esa [factura recurrente](https://lannis.app/blog/facturas-recurrentes).
+- "¿Cuánto debo de monotributo y de qué meses es?". Claude te separa lo vencido, que suma intereses, de lo que todavía no venció, y te dice cuándo se actualizó el dato. Más en [cómo consultar tu deuda con IA](https://lannis.app/blog/deuda-arca-con-ia).
+- "¿Qué me vence este mes?". Claude lista tus vencimientos según la terminación de tu CUIT y los impuestos que tenés activos.
+- "¿Puedo facturar 500.000 más sin pasarme de categoría?". Claude mira lo que facturaste en el semestre, ya descontadas las notas de crédito, y te dice cuánto margen te queda. Lo contamos en [vencimientos y categoría con IA](https://lannis.app/blog/vencimientos-y-categoria-con-ia).
+
+Las facturas que emite Claude se suman a tu historial de Lannis, donde también están las que hiciste en la app o [por WhatsApp](https://lannis.app/blog/facturar-por-whatsapp). Si usás otro asistente, mirá [cómo facturar con IA](https://lannis.app/blog/facturar-con-ia) o [cómo facturar con ChatGPT](https://lannis.app/blog/facturar-con-chatgpt).
+
+[Empezá gratis](https://lannis.app/comencemos).
+
+## Preguntas frecuentes
+
+### ¿Qué pasa si le pido la misma factura dos veces?
+
+Lannis frena una factura idéntica a otra emitida el mismo día, con el mismo monto, el mismo cliente y el mismo tipo. Claude te muestra la que ya existe. Si es otra venta, se lo aclarás y la emite.
+
+### ¿Puedo pedirle una factura con fecha de días atrás?
+
+Sí, si se lo pedís. ARCA acepta hasta 5 días hacia atrás para productos y hasta 10 para servicios. Si no decís nada, la factura sale con fecha de hoy.
+
+### ¿Claude consulta mi deuda en ARCA en el momento?
+
+No. Claude lee la deuda que Lannis sincroniza de ARCA y te dice de cuándo es el dato. Las facturas, en cambio, se autorizan en ARCA en el momento.
+
+### ¿Qué necesita Lannis para emitir en mi nombre?
+
+Lannis te conecta con ARCA para que le delegues los servicios que corresponden. Lo explicamos en [cómo delegar servicios en ARCA](https://lannis.app/blog/delegar-servicios-arca).
+
+### ¿Funciona con otros asistentes?
+
+Con ChatGPT, sí. Otros asistentes que aceptan conectores MCP personalizados usan la misma URL, pero no los probamos.
+
+---
+
+Actualizado en octubre de 2026.

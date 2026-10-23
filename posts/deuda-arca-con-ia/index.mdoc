@@ -1,0 +1,106 @@
+---
+title: 'Consultar tu deuda con ARCA y generar el VEP desde ChatGPT o Claude'
+author: Equipo de Lannis
+description: >-
+  Conectado a Lannis, ChatGPT o Claude te dice cuánto le debés a ARCA, de qué
+  período es cada deuda y te arma el VEP para pagarla cuando lo confirmás.
+date: 2026-10-23
+categories:
+  - producto
+  - monotributo
+  - tramites-arca
+section: novedades-lannis
+image: /api/keystatic-images/posts/deuda-arca-con-ia/image.png
+---
+Le podés preguntar a ChatGPT o a Claude cuánto le debés a ARCA, siempre que el asistente esté conectado a Lannis. Con el conector, te responde con tu deuda real, separada por período y por concepto, y te arma el VEP para pagarla cuando le confirmás.
+
+## De qué está hecha tu deuda con ARCA
+
+La deuda con ARCA se divide en dos:
+
+- Lo vencido. Son las obligaciones que pasaron su fecha de vencimiento sin pagarse, como una cuota del monotributo de hace tres meses. Desde el vencimiento suman intereses todos los días.
+- Lo que está a vencer. Es lo que ya corresponde pagar pero todavía no venció, como la cuota del mes en curso. No tiene intereses mientras esté en fecha.
+
+Cada deuda pertenece a un período, el mes al que corresponde la obligación, y tiene un capital y unos intereses. Cuánto suman esos intereses, y qué pasa si la deuda sigue creciendo, lo explicamos en [deuda de monotributo](https://lannis.app/blog/deuda-monotributo).
+
+## Qué es un VEP
+
+El VEP, volante electrónico de pago, es la boleta con la que se le paga a ARCA. Lleva tu CUIT, los períodos que incluye y el monto calculado a una fecha. Con ese volante pagás desde el homebanking o una billetera virtual.
+
+Generar un VEP no es pagar. Es una instrucción de pago: hasta que no la pagás, la deuda sigue ahí y los intereses siguen corriendo. Qué incluye la cuota del monotributo y cómo se paga está en [pagar el monotributo](https://lannis.app/blog/pagar-el-monotributo).
+
+## Por qué un asistente común no sabe cuánto debés
+
+Un asistente de IA sin conector no ve tu cuenta en ARCA. Si le preguntás cuánto debés, puede explicarte cómo se calcula una deuda en general, pero no tiene tus períodos impagos ni tus montos. Si intenta estimarlos, puede equivocarse en el valor de la cuota, en la tasa de interés o en qué meses tenés pagos.
+
+Conectado a Lannis, el asistente deja de suponer. Consulta tu deuda en Lannis y te responde con tus propios datos.
+
+## Qué te responde el asistente conectado
+
+Le podés pedir:
+
+- El resumen. Si tenés deuda o no, el total y tu cuota mensual.
+- El detalle por ítem. Cada deuda con su período, el concepto, el capital y los intereses, con los totales separados en vencido, a vencer e intereses.
+
+La deuda que ve el asistente es la que Lannis sincronizó con ARCA, no una consulta en vivo. Cada respuesta viene con la fecha de esos datos, y si son viejos, el asistente te lo avisa. Si Lannis todavía no leyó tu deuda, el asistente te dice que ese dato todavía no está, en vez de darte cero.
+
+También te puede listar los VEP que ya generaste.
+
+## Cómo se genera un VEP desde el chat
+
+Un VEP es una instrucción de pago real ante ARCA y no se puede borrar. Por eso el asistente lo genera en dos pasos:
+
+1. Le pedís el VEP. El asistente te muestra qué va a generar: los períodos que incluye y el medio de pago.
+1. Revisás y confirmás. Recién con tu confirmación, Lannis genera el VEP en ARCA.
+
+Por defecto, el VEP sale para pagar con código QR, y lo podés pedir para otro medio, como Pago Mis Cuentas. Si no querés pagar todo, le indicás los períodos y el VEP incluye solo esos.
+
+Desde las 16 horas de Argentina, los intereses del VEP se calculan a la fecha del día siguiente. Un VEP generado a la tarde incluye un día más de intereses que la deuda que viste a la mañana.
+
+## Qué le podés preguntar
+
+- *"¿Cuánto le debo a ARCA?"*
+- *"¿De qué meses es mi deuda y cuánto es de intereses?"*
+- *"¿Qué parte está vencida y qué parte vence este mes?"*
+- *"Generame el VEP para pagar agosto, con QR."*
+- *"¿Qué VEP generé este mes?"*
+
+## Cómo lo resuelve Lannis
+
+Lannis te conecta con ARCA para que le delegues los servicios que corresponden ([cómo delegar servicios en ARCA](https://lannis.app/blog/delegar-servicios-arca)). Con eso, Lannis lee tu deuda y la mantiene sincronizada, y el conector se la muestra a tu asistente.
+
+El conector se agrega una sola vez desde la web de ChatGPT o de Claude, con la URL que encontrás en Lannis, en Integraciones. Cómo hacerlo en cada uno lo contamos en [facturar con ChatGPT](https://lannis.app/blog/facturar-con-chatgpt) y [facturar con Claude](https://lannis.app/blog/facturar-con-claude).
+
+Desde el mismo chat también facturás y consultás tus vencimientos. Todo lo que se puede hacer está en [facturar con inteligencia artificial](https://lannis.app/blog/facturar-con-ia).
+
+[Empezá gratis](https://lannis.app/comencemos).
+
+## Preguntas frecuentes
+
+### ¿El asistente consulta ARCA en el momento?
+
+No. Te muestra la deuda que Lannis sincronizó con ARCA, con la fecha de esos datos.
+
+### ¿Generar el VEP es lo mismo que pagar?
+
+No. El VEP es la instrucción de pago. La deuda se cancela cuando pagás ese VEP.
+
+### ¿El asistente puede generar un VEP sin que yo lo sepa?
+
+No. Primero te muestra qué va a generar y espera tu confirmación.
+
+### ¿Puedo pagar solo algunos meses?
+
+Sí. Le indicás los períodos y el VEP incluye solo esos.
+
+### ¿Por qué el VEP es más alto que la deuda que vi?
+
+Porque los intereses corren por día. Desde las 16 horas, el VEP se calcula con los intereses del día siguiente.
+
+### ¿Lo puedo usar con cualquier plan de Lannis?
+
+El asistente tiene lo mismo que tu plan de Lannis. Si tu plan no incluye la deuda y los VEP, tampoco los vas a tener desde el chat.
+
+---
+
+Actualizado en octubre de 2026.

@@ -1,0 +1,97 @@
+---
+title: 'Facturar con ChatGPT: emitir facturas de ARCA desde el chat'
+author: Equipo de Lannis
+description: >-
+  ChatGPT solo no puede emitir una factura válida. Conectado a Lannis, sí, con
+  su CAE, desde los planes Plus o Pro.
+date: 2026-10-23
+categories:
+  - producto
+  - facturacion
+section: novedades-lannis
+image: /api/keystatic-images/posts/facturar-con-chatgpt/image.png
+---
+ChatGPT solo no puede emitir una factura válida. Puede redactarte un texto con forma de factura, pero una factura electrónica existe cuando ARCA la autoriza y le asigna un CAE. Conectado a Lannis, sí puede: le pedís la factura en el chat y Lannis la emite ante ARCA.
+
+## Qué puede hacer ChatGPT sin conectar
+
+Te puede explicar qué es una [factura C](https://lannis.app/blog/factura-c), ayudarte a escribir la descripción de un servicio o armar un modelo de texto. Lo que no puede hacer es autorizar el comprobante, porque no tiene acceso a ARCA ni a tus datos.
+
+Tampoco sabe tu condición fiscal, tu categoría ni cuánto facturaste en el semestre. Con eso se puede equivocar en la letra, en una regla o en un monto.
+
+## Qué cambia cuando lo conectás a Lannis
+
+ChatGPT entiende tu pedido y usa las herramientas de Lannis. Lannis es el que habla con ARCA: arma la factura con tus datos, la autoriza y le pone el CAE. Para eso, Lannis [te conecta con ARCA para que le delegues los servicios que corresponden](https://lannis.app/blog/delegar-servicios-arca).
+
+La letra sale de tu condición fiscal y no se la tenés que decir. Si le facturás a una empresa, ChatGPT busca los datos de su CUIT en el padrón de ARCA antes de armarla. Cada factura queda en tu historial de Lannis, junto con las que hacés desde la app o [por WhatsApp](https://lannis.app/blog/facturar-por-whatsapp).
+
+## El permiso antes de emitir
+
+Una factura autorizada no se borra. Se anula con una [nota de crédito](https://lannis.app/blog/nota-de-credito). Por eso ChatGPT te pide permiso cada vez que va a usar una herramienta de Lannis que emite. En ese pedido ves el cliente, el monto, el concepto y la letra. Si algo está mal, lo rechazás y lo corregís en el mismo chat. Aprobala de a una, porque si le das permiso para siempre deja de preguntarte.
+
+Las notas de crédito y las facturas recurrentes siguen el mismo camino: primero ves cómo van a quedar y después confirmás. Si pedís dos veces la misma factura en el mismo día, Lannis la frena y te muestra la que ya emitiste.
+
+## Qué plan de ChatGPT necesitás
+
+Para conectar Lannis, ChatGPT tiene que aceptar conectores MCP personalizados. Eso está en los planes Plus y Pro, y no en el plan gratuito. En Business o Enterprise, un administrador tiene que habilitar los conectores personalizados.
+
+Del lado de Lannis, ChatGPT solo puede usar las funciones que incluye tu plan.
+
+## Cómo conectar Lannis a ChatGPT
+
+Se configura una vez, desde chatgpt.com en la computadora, no desde la app del celular. Necesitás la URL del conector, `https://mcp.lannis.app/mcp`, que también encontrás en Lannis, en Integraciones.
+
+1. Entrá a chatgpt.com desde la web.
+2. Abrí Plugins y tocá el botón +.
+3. Elegí Agregar servidor MCP personalizado.
+4. Pegá la URL de Lannis, elegí OAuth y creá el plugin.
+5. Iniciá sesión con tu cuenta de Lannis para autorizarlo.
+
+OpenAI está cambiando los nombres de estos menús y los tuyos pueden ser distintos. En las cuentas más viejas, la opción aparece en Ajustes, Conectores, Modo desarrollador.
+
+## Qué le podés pedir
+
+Le escribís como le escribirías a una persona:
+
+- *"Facturale 85.000 pesos a consumidor final por el diseño del logo de octubre."*
+- *"Haceme una factura de 250.000 pesos por consultoría a la empresa con este CUIT"*, y pegás el CUIT.
+- *"Hacé una nota de crédito por el total de la última factura que le hice a ese cliente."*
+- *"Programá una factura de 120.000 pesos para el día 1 de cada mes a mi cliente de mantenimiento."*
+- *"Pausá la factura recurrente del alquiler."*
+- *"Pasame el PDF de la última factura."*
+
+Las [facturas recurrentes](https://lannis.app/blog/facturas-recurrentes) funcionan igual que desde la app: antes de cada fecha, Lannis te pide por WhatsApp que confirmes esa factura.
+
+Si usás Claude, el conector funciona en todos sus planes. Mirá [cómo facturar con Claude](https://lannis.app/blog/facturar-con-claude), y todo lo que se puede hacer desde un asistente en [facturar con IA](https://lannis.app/blog/facturar-con-ia).
+
+[Empezá gratis](https://lannis.app/comencemos).
+
+## Preguntas frecuentes
+
+### ¿Puedo facturar con el plan gratuito de ChatGPT?
+
+No. Los conectores MCP personalizados piden el plan Plus o Pro. Claude, en cambio, permite un conector personalizado en su plan gratuito.
+
+### ¿Una factura emitida desde ChatGPT es válida?
+
+Sí. ChatGPT le pasa el pedido a Lannis, que emite la factura ante ARCA con su CAE, como cualquier otra.
+
+### ¿ChatGPT puede emitir una factura sin que yo la confirme?
+
+Solo si le diste permiso para siempre. Si aprobás cada emisión por separado, ChatGPT te pregunta antes de usar la herramienta que factura.
+
+### ¿Tengo que decirle qué letra de factura usar?
+
+No. La letra sale de tu condición fiscal y la del cliente.
+
+### Me equivoqué en una factura. ¿La puedo corregir desde el chat?
+
+Sí, con una nota de crédito. Le pedís que anule la factura completa o una parte, revisás cómo queda y confirmás.
+
+### ¿Funciona con otros asistentes de IA?
+
+Lannis lo probó con ChatGPT y Claude. Otros asistentes que aceptan conectores MCP personalizados usan la misma URL.
+
+---
+
+Actualizado en octubre de 2026.

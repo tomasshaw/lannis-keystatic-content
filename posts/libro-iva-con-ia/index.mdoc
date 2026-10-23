@@ -1,0 +1,94 @@
+---
+title: 'Libro IVA, retenciones y percepciones desde ChatGPT o Claude'
+author: Equipo de Lannis
+description: >-
+  Si sos responsable inscripto, un asistente de IA conectado a Lannis te
+  muestra el Libro IVA del mes, te arma los archivos para cargarlo y te lista
+  tus retenciones y percepciones.
+date: 2026-10-23
+categories:
+  - producto
+  - responsable-inscripto
+section: novedades-lannis
+image: /api/keystatic-images/posts/libro-iva-con-ia/image.png
+---
+Si sos responsable inscripto, ChatGPT o Claude te pueden mostrar las compras y ventas de un mes, decirte qué comprobantes tienen problemas y armarte los archivos para cargarlas. Para eso, el asistente tiene que estar conectado a Lannis, que es el que lee tus comprobantes de ARCA. Sin esa conexión, el asistente no ve tus datos y responde con información general.
+
+## El Libro IVA Digital hoy
+
+El Libro IVA Digital era el registro electrónico de las facturas que emitiste y recibiste en el mes. Desde el período noviembre de 2025, los responsables inscriptos ya no lo presentan aparte. Ahora es el primer módulo de la declaración jurada de IVA, el F.2051, que se hace en IVA Simple. Lo explicamos en [qué cambió con el Libro IVA Digital](https://lannis.app/blog/libro-iva-digital).
+
+ARCA te entrega ese registro precargado, pero validarlo sigue siendo tu responsabilidad. El sistema no sabe qué compras no dan crédito fiscal, qué facturas de proveedores nunca se informaron o qué parte de una compra es de uso personal. Si confirmás la precarga sin revisarla, el saldo queda mal calculado y ARCA reclama la diferencia con intereses cuando verifica.
+
+## Qué hace el asistente con tu Libro IVA
+
+Conectado a Lannis, el asistente trabaja sobre un mes por vez:
+
+1. Lee el período: el estado, los totales por alícuota y cada comprobante con los problemas que encontró. Le podés pedir solo ventas o solo compras.
+2. Vuelve a leer el período desde ARCA, guarda los comprobantes que encuentra y arma los cuatro archivos de importación: comprobantes y alícuotas de ventas, y comprobantes y alícuotas de compras. La lectura en ARCA puede tardar hasta dos minutos.
+3. Te pasa el link para descargar cada archivo. La descarga funciona con tu sesión de Lannis iniciada.
+
+El asistente marca problemas concretos, como un IVA que no coincide con el neto por la alícuota o un total que no cuadra. También un comprobante sin documento o sin nombre del titular, o tributos que llegan como un solo importe sin desglose. Los ves antes de cargar nada.
+
+Si después cambia un comprobante, le pedís que vuelva a generar el período. Un período que ya presentaste queda congelado. Para leer tus comprobantes, Lannis [te conecta con ARCA para que le delegues los servicios que corresponden](https://lannis.app/blog/delegar-servicios-arca).
+
+## Las retenciones y percepciones que te hicieron
+
+El asistente te lista lo que te retuvieron y te percibieron, agrupado por mes, por impuesto y por provincia, con el detalle de cada una. Si no le das fechas, responde por los últimos 12 meses. Cada crédito dice contra qué impuesto se computa y en qué plazo. Una percepción de IVA se usa en su período o en cualquiera de los cinco siguientes. Una de Ingresos Brutos solo se descuenta de Ingresos Brutos de esa misma provincia, nunca de IVA. La diferencia entre las dos está en [retenciones y percepciones de IVA](https://lannis.app/blog/retenciones-percepciones-iva).
+
+Para la declaración, te arma el archivo de retenciones o el de percepciones del F.2051, que IVA Simple importa desde el período noviembre de 2025, o un CSV con todo. Cada archivo cubre un mes o hasta tres meses seguidos.
+
+ARCA informa las percepciones de una factura que recibiste como un solo importe. Si el comprobante las detalla, se las dictás al asistente, que te muestra cómo quedan y las guarda cuando confirmás.
+
+## Si sos agente de percepción
+
+Le pedís las percepciones que practicaste en las facturas que emitiste, agrupadas por mes y por provincia. Es lo que declarás ante el organismo provincial. Una nota de crédito aparece con el importe en negativo, ligada a la factura que corrige.
+
+Si sos agente en CABA, también te arma los dos archivos de e-ARCIBA, el de percepciones y el de notas de crédito. Una nota de crédito nunca entra en el de percepciones, por eso se presentan los dos.
+
+Para un cliente puntual, el asistente consulta en el padrón de ARBA (Buenos Aires) o de AGIP (CABA) qué alícuota le corresponde en un mes. Te dice si la alícuota salió del padrón, si se aplicó la de no inscriptos o si no corresponde percibir, y en ese caso el motivo. Lannis ya aplica esa alícuota cuando emite tus facturas.
+
+## Qué le podés pedir
+
+- "Mostrame el Libro IVA de septiembre y decime qué comprobantes tienen problemas."
+- "¿Cuánto IVA de compras al 21% tengo en agosto?"
+- "Generá el Libro IVA de septiembre y pasame el archivo de comprobantes de compras."
+- "¿Qué percepciones de IVA me hicieron este año y hasta cuándo las puedo computar?"
+- "Armame el archivo de percepciones del F.2051 de septiembre."
+- "¿Qué alícuota de ARBA le tengo que percibir en octubre al CUIT de este cliente?"
+
+## Cómo se conecta
+
+Probamos el conector con ChatGPT y con Claude, y lo agregás una sola vez desde la web del asistente, con la URL que está en Lannis, en Integraciones. Seguí los pasos de [facturar con ChatGPT](https://lannis.app/blog/facturar-con-chatgpt) o de [facturar con Claude](https://lannis.app/blog/facturar-con-claude).
+
+Lo que le podés pedir depende de tu plan de Lannis. Además del Libro IVA, el asistente factura, te muestra tu deuda y tus vencimientos. Está todo en [facturar con IA](https://lannis.app/blog/facturar-con-ia). Lannis computa en tu [declaración jurada de IVA](https://lannis.app/blog/declaracion-jurada-iva) las mismas retenciones y percepciones que ves en el chat.
+
+[Empezá gratis](https://lannis.app/comencemos).
+
+## Preguntas frecuentes
+
+### ¿Le sirve a un monotributista?
+
+No. El monotributo no liquida IVA, y estas funciones son para responsables inscriptos.
+
+### ¿El asistente presenta mi declaración de IVA?
+
+No. Desde el chat revisás el período, ves los problemas y descargás los archivos.
+
+### ¿Los datos son de ARCA en el momento?
+
+Cuando genera el Libro IVA, vuelve a leer ARCA. Las retenciones y percepciones salen de los datos que Lannis sincroniza, y la respuesta trae la fecha de la última actualización.
+
+### ¿Puedo descontar del IVA lo que me percibieron de Ingresos Brutos?
+
+No. Una percepción de Ingresos Brutos solo se descuenta de Ingresos Brutos de la misma provincia.
+
+### ¿Con qué asistentes funciona?
+
+Lo probamos con ChatGPT y con Claude. En ChatGPT, el conector personalizado necesita un plan pago.
+
+---
+
+Fuentes: RG 5705/2025 · RG 5707/2025 · RG 5750/2025
+
+Actualizado en octubre de 2026.
