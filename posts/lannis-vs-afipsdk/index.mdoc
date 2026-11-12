@@ -1,0 +1,124 @@
+---
+title: 'Lannis vs AfipSDK: integrar la facturación o usar un servicio listo'
+author: Equipo de Lannis
+description: >-
+  AfipSDK es para quien programa su propio sistema y necesita conectarlo con los
+  web services de ARCA. Lannis es para el monotributista que quiere facturar sin
+  programar, también desde un asistente de IA.
+date: 2026-11-12
+categories:
+  - lannis
+  - facturacion
+section: guia-monotributo
+---
+AfipSDK y Lannis resuelven la facturación electrónica desde dos lugares distintos. AfipSDK es una plataforma para desarrolladores que conecta tu propio software con los web services de ARCA. Lannis es un servicio para monotributistas que factura por vos desde WhatsApp, el dashboard web o tu asistente de IA, sin que escribas una línea de código.
+
+Si sabés programar y estás pensando en armarte tu propio facturador, la pregunta es cuánto de ese trabajo querés hacer y mantener.
+
+## Comparación
+
+{% table %}
+- Tema
+- AfipSDK
+- Lannis
+---
+- Para quién
+- Quien programa su propio sistema
+- El monotributista que factura sus ventas
+---
+- Cómo se usa
+- SDKs, API REST y herramientas no-code (n8n, Make, Zapier)
+- WhatsApp, dashboard web y conector MCP para asistentes de IA
+---
+- Comprobantes
+- Facturas y notas de crédito y débito A, B y C, con CAE y QR
+- Facturas C y E y notas de crédito en el plan Facturación. A y B en Responsable Inscripto
+---
+- Certificado y punto de venta
+- El SDK crea el certificado con tu clave fiscal y crea puntos de venta
+- Conectás tu clave fiscal en el alta y Lannis se encarga del resto
+---
+- Plan gratis
+- 1 CUIT, 10 comprobantes y 1.000 requests
+- Una factura para probar el servicio
+---
+- Precio de entrada
+- Pro: US$ 25 por mes, 10 CUITs y 100 comprobantes
+- Facturación: $ 7.900 por mes
+---
+- Monotributo
+- Consultas de solo lectura (información y cuenta corriente). No menciona pagar la cuota ni recategorizar
+- VEP del mes con QR, facturación contra el tope y recategorización desde el plan Monotributo
+---
+- API para tu software
+- Sí, es el producto
+- No hay API REST pública
+---
+- Soporte
+- Discord, y email desde el plan Growth
+- Expertos humanos por WhatsApp en Monotributo Plus
+{% /table %}
+
+## Qué es AfipSDK
+
+AfipSDK ofrece SDKs y una API REST para hablar con los web services de ARCA. Cubre facturación, incluida la de exportación, padrón, constatación y otros servicios. También se puede usar desde n8n, Make o Zapier si no querés escribir el código de la integración.
+
+Su Factura SDK emite facturas y notas de crédito y débito A, B y C con su CAE y su QR. Además crea el certificado digital a partir de tu clave fiscal y da de alta los puntos de venta.
+
+## Lo que te toca si armás tu integración
+
+AfipSDK te resuelve la conexión con ARCA, pero el sistema alrededor lo construís vos. Eso incluye cómo cargás cada venta y dónde guardás los comprobantes.
+
+Para el monotributo, AfipSDK ofrece automatizaciones de solo lectura, como la información y la cuenta corriente de cada monotributista. No menciona en su sitio el pago de la cuota ni la recategorización.
+
+Si los web services son nuevos para vos, en [Facturador de ARCA o un sistema de facturación](https://lannis.app/blog/facturador-arca-o-sistema-de-facturacion) explicamos cómo encajan con las otras herramientas de ARCA.
+
+## Cuánto cuesta cada uno
+
+AfipSDK cobra en dólares por mes, según la cantidad de CUITs y de comprobantes:
+
+- Free: 1 CUIT, 10 comprobantes y 1.000 requests.
+- Pro: US$ 25, con 10 CUITs y 100 comprobantes. Cada comprobante extra cuesta US$ 0,25.
+- Growth: US$ 80, con 100 CUITs, 1.000 comprobantes y soporte por email.
+- Startup: US$ 250, con 1.000 CUITs y 10.000 comprobantes.
+- Enterprise: a medida.
+
+Lannis cobra en pesos por mes. Facturación sale $ 7.900, Monotributo $ 23.600, Monotributo Plus $ 36.800 y Responsable Inscripto $ 85.800. Al darte de alta se suma un cargo de alta. Podés ver el detalle en [los planes](https://lannis.app/planes).
+
+## Facturar desde un asistente de IA
+
+Si lo que te atrae de programar es automatizar, Lannis tiene un conector MCP en todos los planes. Lo agregás a Claude o a ChatGPT y le pedís la factura en lenguaje natural, sin código ni certificados. Lo contamos paso a paso en [facturar con IA](https://lannis.app/blog/facturar-con-ia).
+
+El plan Facturación también conecta tu tienda (Tiendanube, Empretienda, Mercado Libre, Mercado Pago y Shopify) y factura cada venta en forma automática. Además emite [facturas recurrentes](https://lannis.app/blog/facturas-recurrentes) y [facturación masiva](https://lannis.app/blog/facturacion-masiva) desde Excel o CSV.
+
+Desde el plan Monotributo, Lannis también te manda el VEP del mes con QR y te muestra lo que facturaste contra el tope de tu categoría. La recategorización la confirmás vos, y Lannis hace el cambio ante ARCA y lo verifica en el padrón.
+
+## Cuándo conviene AfipSDK
+
+AfipSDK es la herramienta indicada si necesitás integrar la facturación en tu propio software. Por ejemplo, si tenés un sistema de gestión o un ecommerce propio que tiene que emitir comprobantes. También conviene si manejás muchos CUITs, porque sus planes escalan hasta 1.000 CUITs en Startup.
+
+## Cuándo conviene Lannis
+
+Si sos monotributista y querés facturar tus ventas, Lannis te ahorra construir y mantener el sistema. Podés probarlo con una factura gratis y elegir el plan después.
+
+[Empezá gratis](https://lannis.app/comencemos)
+
+## Preguntas frecuentes
+
+### ¿AfipSDK es de ARCA?
+
+No. Es un sitio comercial sin relación con ARCA. Se conecta con los web services públicos que ARCA ofrece para los sistemas de facturación.
+
+### ¿Lannis tiene una API para conectar mi sistema?
+
+No hay API REST pública. Lo más cercano es el conector MCP, que te deja facturar desde un asistente de IA como [Claude](https://lannis.app/blog/facturar-con-claude) o [ChatGPT](https://lannis.app/blog/facturar-con-chatgpt).
+
+### ¿Qué tipos de factura emite cada uno?
+
+AfipSDK emite facturas y notas de crédito y débito A, B y C. Su web service de facturación incluye la de exportación. Lannis emite [factura C](https://lannis.app/blog/factura-c) y [factura E](https://lannis.app/blog/paso-a-paso-factura-e) desde el plan Facturación, y A y B en el plan Responsable Inscripto.
+
+---
+
+Fuentes: [AfipSDK](https://afipsdk.com) · [Planes de Lannis](https://lannis.app/planes)
+
+Precios relevados el 12 de noviembre de 2026 en los sitios de cada servicio.
