@@ -28,7 +28,7 @@ Si sabés programar y estás pensando en armarte tu propio facturador, la pregun
 ---
 - Cómo se usa
 - SDKs, API REST y herramientas no-code (n8n, Make, Zapier)
-- WhatsApp, dashboard web y conector MCP para asistentes de IA
+- WhatsApp con texto o nota de voz, dashboard web y conector MCP para asistentes de IA
 ---
 - Comprobantes
 - Facturas y notas de crédito y débito A, B y C, con CAE y QR
@@ -40,7 +40,7 @@ Si sabés programar y estás pensando en armarte tu propio facturador, la pregun
 ---
 - Plan gratis
 - 1 CUIT, 10 comprobantes y 1.000 requests
-- Una factura para probar el servicio
+- Una factura para probar el servicio y asesoría con IA por el chat web
 ---
 - Precio de entrada
 - Pro: US$ 25 por mes, 10 CUITs y 100 comprobantes
@@ -87,7 +87,21 @@ Lannis cobra en pesos por mes. Facturación sale $ 7.900, Monotributo $ 23.600, 
 
 ## Facturar desde un asistente de IA
 
-Si lo que te atrae de programar es automatizar, Lannis tiene un conector MCP en todos los planes. Lo agregás a Claude o a ChatGPT y le pedís la factura en lenguaje natural, sin código ni certificados. Lo contamos paso a paso en [facturar con IA](https://lannis.app/blog/facturar-con-ia).
+Si lo que te atrae de programar es automatizar, Lannis tiene un conector MCP en todos los planes, también en el gratis. Funciona con ChatGPT, Claude, Gemini y Grok, y con otros asistentes que aceptan conectores MCP personalizados. Lo configurás una vez desde la web del asistente con la dirección https://mcp.lannis.app/mcp, sin código ni certificados.
+
+Después le pedís en lenguaje natural lo que necesitás:
+
+- Emitir una factura. Antes de emitir, el asistente te muestra el cliente, el monto, el concepto y la letra, y te pide permiso.
+- El PDF de una factura o la lista de las facturas del mes.
+- Crear o pausar facturas recurrentes.
+- Tu deuda con ARCA y el VEP para pagarla, como contamos en [deuda con ARCA desde la IA](https://lannis.app/blog/deuda-arca-con-ia).
+- Tu categoría, cuánto facturaste y tus próximos vencimientos.
+
+El paso a paso está en [facturar con IA](https://lannis.app/blog/facturar-con-ia), y hay guías para [Claude](https://lannis.app/blog/facturar-con-claude), [ChatGPT](https://lannis.app/blog/facturar-con-chatgpt), [Gemini](https://lannis.app/blog/facturar-con-gemini) y [Grok](https://lannis.app/blog/facturar-con-grok).
+
+## Lo demás que hace Lannis
+
+Por WhatsApp le escribís o le mandás una nota de voz con a quién, cuánto y por qué, y te llega la factura.
 
 El plan Facturación también conecta tu tienda (Tiendanube, Empretienda, Mercado Libre, Mercado Pago y Shopify) y factura cada venta en forma automática. Además emite [facturas recurrentes](https://lannis.app/blog/facturas-recurrentes) y [facturación masiva](https://lannis.app/blog/facturacion-masiva) desde Excel o CSV.
 
@@ -111,7 +125,7 @@ No. Es un sitio comercial sin relación con ARCA. Se conecta con los web service
 
 ### ¿Lannis tiene una API para conectar mi sistema?
 
-No hay API REST pública. Lo más cercano es el conector MCP, que te deja facturar desde un asistente de IA como [Claude](https://lannis.app/blog/facturar-con-claude) o [ChatGPT](https://lannis.app/blog/facturar-con-chatgpt).
+No hay API REST pública. Lo más cercano es el conector MCP, que te deja facturar y consultar tu monotributo desde ChatGPT, Claude, Gemini o Grok.
 
 ### ¿Qué tipos de factura emite cada uno?
 
