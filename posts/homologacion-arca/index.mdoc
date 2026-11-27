@@ -1,0 +1,43 @@
+---
+title: 'Homologación de ARCA: probar la facturación sin emitir facturas reales'
+author: Equipo de Lannis
+description: >-
+  Homologación es el ambiente de pruebas de ARCA. Por qué una factura de prueba emitida en producción es real, qué implica anularla y qué probar antes.
+date: 2026-11-27
+categories:
+  - facturacion
+  - tramites-arca
+section: guia-monotributo
+---
+Homologación es el ambiente de pruebas de los web services de ARCA. Una factura emitida ahí no tiene validez fiscal. Una emitida en producción es un comprobante real desde el momento en que ARCA le da el CAE, aunque la hayas mandado para probar.
+
+## Dos ambientes separados
+
+ARCA tiene servidores distintos para cada ambiente, y cada uno pide su propio certificado. El de homologación se tramita aparte y no sirve en producción.
+
+En homologación podés pedir CAE, consultar el último número y ver los errores de validación sin consecuencias. Los datos no se mezclan con los de tu CUIT. Las facturas de prueba no aparecen en tus comprobantes y no suman a tu facturación.
+
+Tu sistema elige el ambiente por configuración.
+
+## Qué pasa si probás en producción
+
+La factura de prueba suma a tus ingresos, cuenta para el tope de tu categoría del monotributo y, si sos responsable inscripto, entra en tu declaración de IVA.
+
+No se puede borrar. La única forma de anularla es emitir una nota de crédito por el mismo importe, y cada nota de crédito es otro comprobante en tu historial. Si probaste con un CUIT de cliente real, ese cliente también la tiene a su nombre.
+
+## Antes de pasar a producción
+
+En homologación conviene probar estos casos:
+
+- La letra que corresponde a cada tipo de cliente.
+- Las notas de crédito.
+- La Factura E en moneda extranjera.
+- Qué hace tu sistema si se corta la conexión a mitad de una factura.
+
+Después del cambio, emití la primera factura real por un monto chico y a un cliente que sepa que la va a recibir.
+
+## Cómo lo resuelve Lannis
+
+La API de Lannis está en acceso anticipado y tiene un sandbox gratis y sin límite. Las facturas de prueba no llegan a ARCA, y los impuestos, la deuda y los vencimientos se prueban con CUIT de prueba. No tramitás certificados para ninguno de los dos ambientes. Pasás a producción cambiando la clave de prueba por la de producción, y tu primera factura real va gratis.
+
+[Pedí acceso anticipado](/sdk).

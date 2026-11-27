@@ -1,0 +1,45 @@
+---
+title: 'Automatizar ARCA: qué prohíbe la Disposición 74/2022'
+author: Equipo de Lannis
+description: >-
+  ARCA prohíbe entrar con bots a los servicios con clave fiscal. Qué dice la Disposición 74/2022, qué puede pasarte y cómo se automatiza por web services.
+date: 2026-11-27
+categories:
+  - tramites-arca
+  - facturacion
+section: guia-monotributo
+---
+Si emitís muchas facturas o llevás varios CUIT, armar un bot que entre a ARCA y haga los clics por vos parece la salida natural. La Disposición 74/2022 lo prohíbe en los servicios que usás con clave fiscal, y la vía pensada para conectar un programa son los web services.
+
+## La norma
+
+La Disposición 74/2022 salió en el Boletín Oficial el 28 de abril de 2022, antes de que el organismo pasara a llamarse ARCA. Aprueba los términos y condiciones para acceder y usar sus sistemas y servicios.
+
+El punto F.2 prohíbe el acceso a los sistemas y servicios interactivos "a través de herramientas automatizadas". En la práctica son los que usás desde el navegador después de entrar con tu clave fiscal, como el facturador o tu cuenta corriente. La norma no nombra ninguna herramienta en particular. Cuentan como herramientas automatizadas un script que completa formularios con tu clave o una extensión del navegador que carga datos por vos. También un robot de RPA como los que usan algunos estudios contables.
+
+Para los sistemas no interactivos, la norma solo dice que ARCA fija un límite de accesos.
+
+En 2022 el Consejo Profesional de Ciencias Económicas de CABA pidió revisar la disposición, y el organismo se comprometió a hacerlo. A noviembre de 2026, InfoLeg no registra ninguna norma que la modifique.
+
+## Qué puede hacer ARCA si detecta un bot
+
+ARCA puede limitarte o quitarte el acceso a sus sistemas. Si vincula un uso que no cumple los términos con un incidente de seguridad, puede tomar alguna de estas medidas, según la gravedad:
+
+- Avisarte que hay actividad anómala en tu cuenta.
+- Blanquear tu clave fiscal.
+- Pedirte un segundo factor de autenticación.
+- Bloquear tu clave fiscal por un tiempo.
+
+Un bloqueo te deja afuera de todos los servicios que usan esa clave hasta que la recuperes. Si sos contador y el bot corre con tu clave, el problema alcanza también a los clientes que te delegaron sus servicios.
+
+## Cómo se conecta un programa con ARCA
+
+ARCA publica web services para que un sistema se conecte de programa a programa, sin pasar por las pantallas. El de factura electrónica devuelve el CAE de cada comprobante y otros permiten consultar el padrón. Para usarlos hace falta un certificado digital asociado al CUIT y autorizar cada servicio.
+
+Podés programar tu propia integración, directo contra los web services o con un SDK, y mantener vos el sistema alrededor. En [Lannis vs AfipSDK](/blog/lannis-vs-afipsdk) comparamos ese camino con un servicio listo. También podés usar un sistema de facturación que ya esté conectado, y en [Facturador de ARCA o un sistema de facturación](/blog/facturador-arca-o-sistema-de-facturacion) explicamos cuándo conviene cada uno.
+
+## Cómo lo resuelve Lannis
+
+Lannis emite tus facturas por el web service de factura electrónica de ARCA, y cada comprobante sale con su CAE y su QR. Antes, te conecta con ARCA para que le delegues los servicios que corresponden. Con eso, facturás por WhatsApp, desde el dashboard web o desde tu asistente de IA con el conector MCP.
+
+¿Querés probarlo? [Emití tu primera factura gratis](/comencemos).

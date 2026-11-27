@@ -1,0 +1,49 @@
+---
+title: 'Facturar por API en ARCA: web services, SDK o una API lista'
+author: Equipo de Lannis
+description: >-
+  ARCA no tiene una API REST. Qué piden sus web services para facturar desde tu sistema, qué queda de tu lado y qué opciones hay: integración propia, SDK o API.
+date: 2026-11-27
+categories:
+  - facturacion
+  - producto
+section: guia-monotributo
+---
+Si tu sistema ya registra cada venta, emitir la factura desde ahí te ahorra cargarla dos veces. ARCA no tiene una API REST. Ofrece web services SOAP.
+
+## Qué pide ARCA
+
+El web service de factura electrónica devuelve el CAE, el código que hace válido cada comprobante. Antes de pedirlo, tu sistema tiene que tener:
+
+- Un certificado digital asociado al CUIT, que vence y hay que renovar.
+- El web service de factura electrónica autorizado para ese certificado.
+- Un punto de venta de tipo web services. El punto de venta que usás en el facturador de ARCA no sirve para esto.
+- Un token del servicio de autenticación de ARCA, que dura 12 horas.
+
+La Factura E va por otro web service, con su propio punto de venta de exportación. Si cobrás del exterior, son dos integraciones.
+
+Si sos contador o tenés una plataforma con muchos CUIT, cada uno necesita su certificado y su autorización.
+
+## Lo que queda de tu lado
+
+ARCA autoriza el comprobante y nada más. Tu sistema tiene que pedir el número siguiente antes de cada factura, armar el PDF con el código QR que exige ARCA y guardar cada comprobante.
+
+Si la respuesta de ARCA no llega, no sabés si la factura salió, y reenviarla sin consultar puede emitirla dos veces. Una factura emitida no se borra. Se anula con una nota de crédito.
+
+También te toca elegir la letra según tu condición y la del cliente, y seguir los cambios de ARCA en sus web services.
+
+## Las opciones
+
+Podés programar la integración directo contra los web services. Es el camino que más mantenimiento te deja.
+
+Un SDK resuelve la conexión, el certificado y el token, y el sistema alrededor sigue siendo tuyo. En [Lannis vs AfipSDK](/blog/lannis-vs-afipsdk) comparamos ese camino con un servicio listo.
+
+Lo que no conviene es un bot que entre al facturador de ARCA con tu clave fiscal y cargue las facturas. La Disposición 74/2022 lo prohíbe, y lo explicamos en [Automatizar ARCA](/blog/automatizar-arca).
+
+## Cómo lo resuelve Lannis
+
+Lannis está abriendo una API REST para facturar desde tu sistema, hoy en acceso anticipado. Emite facturas A, B, C y E y notas de crédito, y devuelve el PDF. Lannis conecta cada CUIT con ARCA, así que no generás ni renovás certificados.
+
+Cada pedido acepta una clave de idempotencia, y Lannis bloquea la factura repetida si reintentás. Para probar hay un sandbox gratis, con facturas de prueba que no llegan a ARCA. En producción, el precio de lanzamiento es de USD 4 por mes por cada CUIT que factura, con facturas ilimitadas.
+
+[Pedí acceso anticipado](/sdk).
